@@ -1,0 +1,199 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*css variable*/
+:root{
+    --navbar-height:59px;
+}
+/*navigation bar  flex box used for take in one line of many element in presented in one section */ 
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/* navigation bar :logo and image */
+#logo{
+    margin: 11px 15px;
+}
+#logo img{
+    margin: 10px 10px;
+    height: 36px;
+}
+/*navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top: 1px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;    
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 415px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../bg4.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.84;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/*section of services*/
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 24px;
+    background-color: bisque;
+
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#client-section{
+    height: 244px;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client img{
+    height: 125px;
+    
+}
+.client-item{
+    padding: 34px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg5.jpg');
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    opacity: .4;
+}
+
+/*contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+
+/*utility classes*/
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.center{
+    text-align: center;
+}
+footer{
+    background: black;
+    color: white;
+    height: 50px;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
